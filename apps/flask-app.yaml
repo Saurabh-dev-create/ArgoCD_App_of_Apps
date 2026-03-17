@@ -7,7 +7,7 @@ spec:
   project: flask-project
 
   source:
-    repoURL: https://github.com/YOUR_GITHUB_USERNAME/argo-app-of-apps
+    repoURL: https://github.com/Saurabh-dev-create/ArgoCD_App_of_Apps.git
     targetRevision: HEAD
     path: flask
 

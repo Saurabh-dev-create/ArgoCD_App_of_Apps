@@ -7,17 +7,17 @@ spec:
   project: nginx-project
 
   source:
-    repoURL:
+    repoURL: https://github.com/Saurabh-dev-create/ArgoCD_App_of_Apps.git
     targetRevision: HEAD
     path: nginx
-  destinations:
-    server: htpps://kubernetes.default.svc
+  destination:
+    server: https://kubernetes.default.svc
     namespace: nginx
 
   syncPolicy:
     automated:
-    selfHeal: true
-    prune: true
-  syncOptions:
-  - CreateNamespace=true
+      selfHeal: true
+      prune: true
+    syncOptions:
+    - CreateNamespace=true
          
